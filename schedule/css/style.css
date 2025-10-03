@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  font-family: Roboto;
+  background: #0b0f17;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .body__content {
+  border: 2px solid #1a1e24;
+  border-radius: 7px;
+  color: #FFF;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 40px 30px;
+}
+body .body__content .content__title {
+  font-size: 50px;
+  line-height: 50px;
+  width: 200px;
+  color: #FFF;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.schedule__settings {
+  display: flex;
+}
+.schedule__settings .setting__field {
+  margin: 0px 10px 10px 0px;
+}
+.schedule__settings .setting__field select {
+  width: 200px;
+  background: transparent;
+  border: 2px solid #1a1e24;
+  border-radius: 10px;
+  height: 40px;
+  padding-left: 20px;
+  margin-top: 10px;
+  color: #FFF;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.schedule__settings .setting__field select option {
+  color: #0b0f17;
+}
+
+.wide__setting__field p {
+  margin: 0px 10px 10px 0px;
+}
+.wide__setting__field button {
+  width: 50px;
+  height: 40px;
+  border-radius: 7px;
+  background: transparent;
+  border: 2px solid #1a1e24;
+  color: #FFF;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.wide__setting__field button:hover {
+  background: #171a22;
+}
+.wide__setting__field button:focus {
+  background: #171a22;
+}
+
+.schedule {
+  border: 2px solid #1a1e24;
+  padding: 15px 15px;
+  border-radius: 7px;
+}
+.schedule .content {
+  overflow: auto;
+  height: 400px;
+}
+.schedule .date {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.schedule .date .day-name {
+  font-size: 22px;
+}
+.schedule .date .day-date {
+  font-size: 13px;
+  color: #bcc5cd;
+}
+.schedule__field .item {
+  display: flex;
+  background: #121820;
+  padding: 20px 20px;
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+.schedule__field .item .item__description {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.schedule__field .item .item__description .time {
+  font-size: 18px;
+  width: 50px;
+}
+.schedule__field .item .item__description .type {
+  font-size: 14px;
+  color: #ccd8dd;
+}
+.schedule__field .item .item__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.schedule__field .item .item__info .title {
+  font-size: 18px;
+  width: 300px;
+}
+.schedule__field .item .item__info .description {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ccd8dd;
+}/*# sourceMappingURL=style.css.map */

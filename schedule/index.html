@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/icons/bsac_logo.svg">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Расписание ИП-591</title>
+	
+</head>
+<body>
+	<div class="body__content">
+		<p class="content__title">
+			Расписание занятий
+		</p>
+		<!--Выбор подгруппы и учебной недели-->
+		<div class="schedule__settings">
+			<div class="setting__field">
+				<p>Подгруппа</p>
+				<select name="subgroup">
+					<option value="first" selected onclick="chooseCurrentSubgroup()">Первая</option>
+					<option value="second" onclick="chooseCurrentSubgroup()">Вторая</option>
+				</select>
+			</div>
+			<div class="setting__field">
+				<p>Учебная неделя</p>
+				<select name="weeknumb">
+					<option value="first" selected onclick="chooseCurrentWeek()">Первая</option>
+					<option value="second" onclick="chooseCurrentWeek()">Вторая</option>
+					<option value="third" onclick="chooseCurrentWeek()">Третья</option>
+					<option value="fourth" onclick="chooseCurrentWeek()">Четвертая</option>
+				</select>
+			</div>
+		</div>
+		<!--Выбор дня недели-->
+		<div class="wide__setting__field">
+			<p>День</p>
+			<div class="day__choice">
+				<button class="monday" onclick="chooseCurrentDay(event)">Пн</button>
+				<button class="tuesday" onclick="chooseCurrentDay(event)">Вт</button>
+				<button class="wednesday" onclick="chooseCurrentDay(event)">Ср</button>
+				<button class="thursday" onclick="chooseCurrentDay(event)">Чт</button>
+				<button class="friday" onclick="chooseCurrentDay(event)">Пт</button>
+				<button class="saturday" onclick="chooseCurrentDay(event)">Сб</button>
+			</div>
+		</div>
+		<!--Расписание-->
+		<div class="schedule" id="schedule">
+			<div class="date">
+				<p class = "day-name">Понедельник</p>
+				<p class = "day-date">29.09.25</p>
+			</div>
+			<div class="content">
+				<div class="schedule__field">
+					<div class="item">
+						<div class="item__description">
+							<p class="time">8:00</p>
+							<p class="type">ЛК</p>
+						</div>
+						<div class="item__info">
+							<p class="title">Математика</p>
+							<div class="description">
+								<p>Каб.202</p>
+								<p>Антон Антонович</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="schedule__field">
+					<div class="item">
+						<div class="item__description">
+							<p class="time">9:00</p>
+							<p class="type">ЛК</p>
+						</div>
+						<div class="item__info">
+							<p class="title">Математика</p>
+							<div class="description">
+								<p>Каб.202</p>
+								<p>Антон Антонович</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="schedule__field">
+					<div class="item">
+						<div class="item__description">
+							<p class="time">8:00</p>
+							<p class="type">ЛК</p>
+						</div>
+						<div class="item__info">
+							<p class="title">Математика</p>
+							<div class="description">
+								<p>Каб.202</p>
+								<p>Антон Антонович</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="schedule__field">
+					<div class="item">
+						<div class="item__description">
+							<p class="time">8:00</p>
+							<p class="type">ЛК</p>
+						</div>
+						<div class="item__info">
+							<p class="title">Математика</p>
+							<div class="description">
+								<p>Каб.202</p>
+								<p>Антон Антонович</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="schedule__field">
+					<div class="item">
+						<div class="item__description">
+							<p class="time">8:00</p>
+							<p class="type">ЛК</p>
+						</div>
+						<div class="item__info">
+							<p class="title">Математика</p>
+							<div class="description">
+								<p>Каб.202</p>
+								<p>Антон Антонович</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
