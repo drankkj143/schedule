@@ -339,15 +339,12 @@ function htmlToArray(collection)
 	return param;
 }
 
-function checkSubgroup(item, ex)
+function checkSubgroup(item)
 {
 	if(item.includes('/'))
 	{
 		let items = item.split('/');
-		if (ex == null)
-			return items[currentSubgroup];
-		else
-			return items[ex[currentSubgroup]];
+		return items[currentSubgroup];
 	} 
 	return item;
 }
