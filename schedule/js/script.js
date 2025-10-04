@@ -344,7 +344,7 @@ function checkSubgroup(item)
 	if(item.includes('/'))
 	{
 		let items = item.split('/');
-		items[currentSubgroup];
+		return items[currentSubgroup];
 	} 
 	return item;
 }
