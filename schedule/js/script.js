@@ -306,28 +306,13 @@ function chooseCurrentDay(button){
 	showSchedule();
 }
 
-function chooseCurrentWeek(){
-	const currWeek = document.getElementsByName('weeknumb')[0].value;
-	switch(currWeek){
-		case 'first':
-			currentWeek = 0;
-			break;
-		case 'second':
-			currentWeek = 1;
-			break;
-		case 'third':
-			currentWeek = 2;
-			break;
-		case 'fourth':
-			currentWeek = 3;
-	}
+function chooseCurrentWeek(event){
+	currentWeek = ['first', 'second', 'third', 'fourth'].indexOf(event.target.value);
 	showSchedule();
 }
 
-function chooseCurrentSubgroup(){
-	const currGroup = document.getElementsByName('subgroup')[0].value;
-	if(currGroup == 'first') currentSubgroup = 0;
-	else currentSubgroup = 1;
+function chooseCurrentSubgroup(event){
+	currentSubgroup = ['first', 'second'].indexOf(event.target.value);
 	showSchedule();
 }
 

@@ -17,18 +17,18 @@
 		<div class="schedule__settings">
 			<div class="setting__field">
 				<p>Подгруппа</p>
-				<select name="subgroup">
-					<option value="first" selected onclick="chooseCurrentSubgroup()">Первая</option>
-					<option value="second" onclick="chooseCurrentSubgroup()">Вторая</option>
+				<select name="subgroup" onchange="chooseCurrentSubgroup(event)">
+					<option value="first" selected>Первая</option>
+					<option value="second">Вторая</option>
 				</select>
 			</div>
 			<div class="setting__field">
 				<p>Учебная неделя</p>
-				<select name="weeknumb">
-					<option value="first" selected onclick="chooseCurrentWeek()">Первая</option>
-					<option value="second" onclick="chooseCurrentWeek()">Вторая</option>
-					<option value="third" onclick="chooseCurrentWeek()">Третья</option>
-					<option value="fourth" onclick="chooseCurrentWeek()">Четвертая</option>
+				<select name="weeknumb" onchange="chooseCurrentWeek(event)">
+					<option value="first" selected>Первая</option>
+					<option value="second">Вторая</option>
+					<option value="third">Третья</option>
+					<option value="fourth">Четвертая</option>
 				</select>
 			</div>
 		</div>
