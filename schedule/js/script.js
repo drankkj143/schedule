@@ -1,6 +1,7 @@
 let currentDay = 0;
 let currentWeek = 0;
 let currentSubgroup = 0;
+let currentDate = new Date();
 
 let schedule = [
 	{
@@ -12,7 +13,7 @@ let schedule = [
 				type: '-',
 				teacher: '-',
 				cabinet: 'Ауд. -',
-				time: '8:00',
+				time: '8:00-9:40',
 				weeks: ' ',
 			},
 			{
@@ -20,7 +21,7 @@ let schedule = [
 				type: 'ПЗ',
 				teacher: 'Игнатьева Е.М./Старовойтова А.Г.',
 				cabinet: 'Ауд. 214/Ауд. 312',
-				time: '9:55',
+				time: '9:55-11:35',
 				weeks: ' ',
 			},
 			{
@@ -28,7 +29,7 @@ let schedule = [
 				type: 'ЛК',
 				teacher: 'Шкробот И.О.',
 				cabinet: 'Ауд. 244',
-				time: '12:15',
+				time: '12:15-13:55',
 				weeks: ' ',
 			},
 			{
@@ -36,7 +37,7 @@ let schedule = [
 				type: '-',
 				teacher: 'Байко О.М.',
 				cabinet: 'Ауд. -',
-				time: '14:10',
+				time: '14:10-15:50',
 				weeks: ' ',
 			},
 			{
@@ -44,7 +45,7 @@ let schedule = [
 				type: 'ПЗ',
 				teacher: 'Шкробот И.О.',
 				cabinet: 'Ауд. 218',
-				time: '16:20',
+				time: '16:20-18:00',
 				weeks: ' ',
 			},
 		],
@@ -308,11 +309,13 @@ function chooseCurrentDay(button){
 
 function chooseCurrentWeek(event){
 	currentWeek = ['first', 'second', 'third', 'fourth'].indexOf(event.target.value);
+	localStorage.setItem('weeknumb', event.target.value);
 	showSchedule();
 }
 
 function chooseCurrentSubgroup(event){
 	currentSubgroup = ['first', 'second'].indexOf(event.target.value);
+	localStorage.setItem('subgroup', event.target.value);
 	showSchedule();
 }
 
@@ -382,9 +385,30 @@ function editSchedule(array){
 	}
 }
 
+function getValueFromLS(key)
+{
+	const value = localStorage.getItem(key);
+	if(value)
+		return value;
+	return false;
+}
+
+function setCurrentDayToSchedule()
+{
+	currentSubgroup = ['first', 'second'].indexOf(getValueFromLS('subgroup'));
+	currentWeek = ['first', 'second', 'third', 'fourth'].indexOf(getValueFromLS('weeknumb'));
+	console.log(document.getElementsByName('subgroup'), ' ', currentWeek);
+	currentDay = currentDate.getDay()-1;
+	for(let i = 0; i < 6; i++)
+	{
+		let date = new Date(currentDate.getFullYear(), currentDate.getMonth(),
+					currentDate.getDate() - (currentDate.getDay()-1) + i);
+		schedule[i].dateOfDay = 
+					`${date.getDate()}.${date.getMonth()+1}.${date.getFullYear()}`;
+	}
+}
+
 function showSchedule(){
-	
-	
 	const dateSchedule = document.getElementById('schedule').children[0].children;
 	
 	dateSchedule[0].textContent = schedule[currentDay].nameOfDay;
@@ -396,4 +420,7 @@ function showSchedule(){
 	editSchedule(parameters);
 }
 
+
+
+setCurrentDayToSchedule();
 showSchedule();

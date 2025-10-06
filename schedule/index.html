@@ -17,15 +17,15 @@
 		<div class="schedule__settings">
 			<div class="setting__field">
 				<p>Подгруппа</p>
-				<select name="subgroup" onchange="chooseCurrentSubgroup(event)">
-					<option value="first" selected>Первая</option>
+				<select name="subgroup" onchange="chooseCurrentSubgroup(event)" @change="selectChanged" :value = "modelValue">
+					<option value="first">Первая</option>
 					<option value="second">Вторая</option>
 				</select>
 			</div>
 			<div class="setting__field">
 				<p>Учебная неделя</p>
-				<select name="weeknumb" onchange="chooseCurrentWeek(event)">
-					<option value="first" selected>Первая</option>
+				<select name="weeknumb" onchange="chooseCurrentWeek(event)" @change="selectChanged" :value = "modelValue">
+					<option value="first">Первая</option>
 					<option value="second">Вторая</option>
 					<option value="third">Третья</option>
 					<option value="fourth">Четвертая</option>
