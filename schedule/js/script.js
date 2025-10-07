@@ -410,16 +410,43 @@ function setCurrentDayToSchedule()
 function updateTime()
 {
 	currDate = new Date();
+	markerItem();
 	const elem = document.getElementById('schedule').children[0].children[1];
 	elem.textContent = currDate.toLocaleTimeString();
 	setTimeout(updateTime, 1000);
+}
+
+function timeToMin(time)
+{
+	let hours = parseInt(time.split('-')[1].split(':')[0]);
+	let min = parseInt(time.split('-')[1].split(':')[1]);
+	return (hours*60)+min;
+}
+
+function markerItem()
+{
+	let steps = [0,0,0,0,0];
+	let currTime = new Date();
+	let currTimeInMin = (currTime.getHours()*60)+currTime.getMinutes();
+	for(let i = 0; i < 5; i++)
+		steps[i] = timeToMin(schedule[currentDay].scheduleOfDay[i].time);
+	const itemSchedule = document.getElementsByClassName('schedule__field');
+	for(let i = 0; i < 5; i++)
+	{
+		if(currTimeInMin > steps[i])
+			itemSchedule[i].style = `filter: drop-shadow(1px 1px 1px #ff073a);`;
+		else
+		{
+			itemSchedule[i].style = `filter: drop-shadow(1px 1px 1px #39ff14);`;
+			break;
+		}
+	}
 }
 
 function showSchedule(){
 	const dateSchedule = document.getElementById('schedule').children[0].children;
 	
 	dateSchedule[0].textContent = schedule[currentDay].nameOfDay;
-	
 	dateSchedule[2].textContent = schedule[currentDay].dateOfDay;
 
 	const itemSchedule = document.getElementsByClassName('item');
@@ -431,4 +458,5 @@ function showSchedule(){
 
 updateTime();
 setCurrentDayToSchedule();
+markerItem();
 showSchedule();
