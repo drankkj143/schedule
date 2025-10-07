@@ -78,14 +78,16 @@ body{
 	}
 	.date{
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		margin-bottom: 15px;
 		.day-name{
 			font-size: 22px;
+			width: 50px;
 		}
 		.day-date{
 			font-size: 13px;
 			color: #bcc5cd;
+			width: 60px;
 		}
 	}
 	&__field{

@@ -59,7 +59,7 @@ let schedule = [
 				type: 'ПЗ',
 				teacher: 'Спартак А.А.',
 				cabinet: 'Ауд. 218',
-				time: '8:00',
+				time: '8:00-9:40',
 				weeks: '2/4',
 			},
 			{
@@ -67,7 +67,7 @@ let schedule = [
 				type: 'ПЗ (Ф)',
 				teacher: 'Старовойтова А.Г.',
 				cabinet: 'Ауд. 104',
-				time: '9:55',
+				time: '9:55-11:35',
 				weeks: ' ',
 			},
 			{
@@ -75,7 +75,7 @@ let schedule = [
 				type: 'ЛК',
 				teacher: 'Черняк Ж.А.',
 				cabinet: 'Ауд. 244',
-				time: '12:15',
+				time: '12:15-13:55',
 				weeks: ' ',
 			},
 			{
@@ -83,7 +83,7 @@ let schedule = [
 				type: 'ПЗ',
 				teacher: 'Черняк Ж.А.',
 				cabinet: 'Ауд. 244',
-				time: '14:10',
+				time: '14:10-15:50',
 				weeks: ' ',
 			},
 			{
@@ -91,7 +91,7 @@ let schedule = [
 				type: '-',
 				teacher: '-',
 				cabinet: 'Ауд. -',
-				time: '16:20',
+				time: '16:20-18:00',
 				weeks: ' ',
 			},
 		],
@@ -105,7 +105,7 @@ let schedule = [
 				type: 'ЛБ',
 				teacher: 'Старый',
 				cabinet: 'Ауд. 212',
-				time: '8:00',
+				time: '8:00-9:40',
 				weeks: '1/3/2/4',
 			},
 			{
@@ -113,7 +113,7 @@ let schedule = [
 				type: 'ЛБ',
 				teacher: 'Старый',
 				cabinet: 'Ауд. 212',
-				time: '9:55',
+				time: '9:55-11:35',
 				weeks: '1/3/2/4',
 			},
 			{
@@ -121,7 +121,7 @@ let schedule = [
 				type: 'ПЗ',
 				teacher: 'Игнатьева Е.М./Старовойтова А.Г.',
 				cabinet: 'Ауд. 214/Ауд. 312',
-				time: '12:15',
+				time: '12:15-13:55',
 				weeks: ' ',
 			},
 			{
@@ -129,7 +129,7 @@ let schedule = [
 				type: 'ЛК',
 				teacher: 'Василевский Г.В.',
 				cabinet: 'Ауд. 405',
-				time: '14:10',
+				time: '14:10-15:50',
 				weeks: ' ',
 			},
 			{
@@ -137,7 +137,7 @@ let schedule = [
 				type: '-',
 				teacher: '-',
 				cabinet: 'Ауд. -',
-				time: '16:20',
+				time: '16:20-18:00',
 				weeks: ' ',
 			},
 		],
@@ -151,7 +151,7 @@ let schedule = [
 				type: '-',
 				teacher: '-',
 				cabinet: 'Ауд. -',
-				time: '8:00',
+				time: '8:00-9:40',
 				weeks: ' ',
 			},
 			{
@@ -159,7 +159,7 @@ let schedule = [
 				type: 'ПЗ',
 				teacher: 'Василевский Г.В.',
 				cabinet: 'Ауд. 410',
-				time: '9:55',
+				time: '9:55-11:35',
 				weeks: ' ',
 			},
 			{
@@ -167,7 +167,7 @@ let schedule = [
 				type: 'ЛК',
 				teacher: 'Черняк Ж.А.',
 				cabinet: 'Ауд. 418',
-				time: '12:15',
+				time: '12:15-13:55',
 				weeks: ' ',
 			},
 			{
@@ -175,7 +175,7 @@ let schedule = [
 				type: 'ПЗ',
 				teacher: 'Черняк Ж.А.',
 				cabinet: 'Ауд. 244',
-				time: '14:10',
+				time: '14:10-15:50',
 				weeks: ' ',
 			},
 			{
@@ -183,7 +183,7 @@ let schedule = [
 				type: 'ПЗ',
 				teacher: 'Старый',
 				cabinet: 'Ауд. 202',
-				time: '16:20',
+				time: '16:20-18:00',
 				weeks: '4',
 			},
 		],
@@ -197,7 +197,7 @@ let schedule = [
 				type: 'ПЗ/ЛБ',
 				teacher: 'Старый',
 				cabinet: 'Ауд. 212',
-				time: '8:00',
+				time: '8:00-9:40',
 				weeks: ' ',
 			},
 			{
@@ -205,7 +205,7 @@ let schedule = [
 				type: 'ПЗ/ЛБ',
 				teacher: 'Старый',
 				cabinet: 'Ауд. 212',
-				time: '9:55',
+				time: '9:55-11:35',
 				weeks: ' ',
 			},
 			{
@@ -213,7 +213,7 @@ let schedule = [
 				type: '-',
 				teacher: 'Байко О.М.',
 				cabinet: 'Ауд. -',
-				time: '12:15',
+				time: '12:15-13:55',
 				weeks: ' ',
 			},
 			{
@@ -221,7 +221,7 @@ let schedule = [
 				type: 'ЛК',
 				teacher: 'Спартак А.А.',
 				cabinet: 'Ауд. 222',
-				time: '14:10',
+				time: '14:10-15:50',
 				weeks: ' ',
 			},
 			{
@@ -229,7 +229,7 @@ let schedule = [
 				type: '-',
 				teacher: '-',
 				cabinet: 'Ауд. -',
-				time: '16:20',
+				time: '16:20-18:00',
 				weeks: ' ',
 			},
 		],
@@ -243,7 +243,7 @@ let schedule = [
 				type: 'ЛК',
 				teacher: 'Шкробот И.О.',
 				cabinet: 'Ауд. 406',
-				time: '8:00',
+				time: '8:00-9:40',
 				weeks: ' ',
 			},
 			{
@@ -251,7 +251,7 @@ let schedule = [
 				type: 'ПЗ',
 				teacher: 'Шкробот И.О.',
 				cabinet: 'Ауд. 406',
-				time: '9:55',
+				time: '9:55-11:35',
 				weeks: ' ',
 			},
 			{
@@ -259,7 +259,7 @@ let schedule = [
 				type: '-',
 				teacher: '-',
 				cabinet: 'Ауд. -',
-				time: '12:15',
+				time: '12:15-13:55',
 				weeks: ' ',
 			},
 			{
@@ -267,7 +267,7 @@ let schedule = [
 				type: '-',
 				teacher: '-',
 				cabinet: 'Ауд. -',
-				time: '14:10',
+				time: '14:10-15:50',
 				weeks: ' ',
 			},
 			{
@@ -275,7 +275,7 @@ let schedule = [
 				type: '-',
 				teacher: '-',
 				cabinet: 'Ауд. -',
-				time: '16:20',
+				time: '16:20-18:00',
 				weeks: ' ',
 			},
 		],
@@ -397,7 +397,6 @@ function setCurrentDayToSchedule()
 {
 	currentSubgroup = ['first', 'second'].indexOf(getValueFromLS('subgroup'));
 	currentWeek = ['first', 'second', 'third', 'fourth'].indexOf(getValueFromLS('weeknumb'));
-	console.log(document.getElementsByName('subgroup'), ' ', currentWeek);
 	currentDay = currentDate.getDay()-1;
 	for(let i = 0; i < 6; i++)
 	{
@@ -408,11 +407,20 @@ function setCurrentDayToSchedule()
 	}
 }
 
+function updateTime()
+{
+	currDate = new Date();
+	const elem = document.getElementById('schedule').children[0].children[1];
+	elem.textContent = currDate.toLocaleTimeString();
+	setTimeout(updateTime, 1000);
+}
+
 function showSchedule(){
 	const dateSchedule = document.getElementById('schedule').children[0].children;
 	
 	dateSchedule[0].textContent = schedule[currentDay].nameOfDay;
-	dateSchedule[1].textContent = schedule[currentDay].dateOfDay;
+	
+	dateSchedule[2].textContent = schedule[currentDay].dateOfDay;
 
 	const itemSchedule = document.getElementsByClassName('item');
 	const parameters = htmlToArray(itemSchedule);
@@ -421,6 +429,6 @@ function showSchedule(){
 }
 
 
-
+updateTime();
 setCurrentDayToSchedule();
 showSchedule();

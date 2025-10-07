@@ -143,15 +143,17 @@ body .body__content .content__title {
 }
 .schedule .date {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 15px;
 }
 .schedule .date .day-name {
   font-size: 22px;
+  width: 50px;
 }
 .schedule .date .day-date {
   font-size: 13px;
   color: #bcc5cd;
+  width: 60px;
 }
 .schedule__field .item {
   display: flex;
